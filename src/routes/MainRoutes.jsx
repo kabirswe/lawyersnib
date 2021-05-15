@@ -4,7 +4,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-
+import { HomePage } from '../app/home/index'
 import { LoginPage, LoginPhonePage } from '../app/login/index';
 import {
   ForgetPasswordPage,
@@ -24,7 +24,7 @@ const routes = [
   {
     path: "/",
     exact: true,
-    component: LoginPage
+    component: HomePage
   },
   {
     path: "/login",

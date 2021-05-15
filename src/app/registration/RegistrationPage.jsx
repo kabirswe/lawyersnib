@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { Redirect } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { AuthLayout } from '../../containers/AuthLayout';
+import { AuthLayout } from '../../containers/index';
 import Inputfield from '../../components/inputfield/Inputfield';
 import InputCheckbox from '../../components/inputCheckbox/InputCheckbox';
 import './static/RegistrationPage.scss';

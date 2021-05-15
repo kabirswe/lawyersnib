@@ -1,6 +1,6 @@
 import React, { useCallback, useState } from "react";
 import { Link } from "react-router-dom";
-import { AuthLayout } from "../../containers/AuthLayout";
+import { AuthLayout } from "../../containers/index";
 import Inputfield from "../../components/inputfield/Inputfield";
 import "./static/LoginPage.scss";
 import { ReactComponent as Facebook } from "./static/image/facebook.svg";
