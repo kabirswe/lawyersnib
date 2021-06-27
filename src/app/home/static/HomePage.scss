@@ -28,8 +28,8 @@
 		}
 		.top-right-img {
 			position: absolute;
-			right: -50px;
-			top: -20px;
+			right: -20px;
+			top: -4px;
 			height: 482px;
 			z-index: -1;
 			// box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -89,7 +89,7 @@
 			display: flex;
 			justify-content: center;
 			margin-top: 160px;
-			margin-bottom: 120px;
+			margin-bottom: 140px;
 			.about-wrapper {
 				display: flex;
 				justify-content: flex-start;
@@ -200,18 +200,21 @@
 		.services-section {
 			position: relative;
 			display: flex;
-			margin-top: 120px;
+			background: #f6f6f6;
+			background: -webkit-linear-gradient(to top, #fffffe, #f6f6f6);
+			background: linear-gradient(to top, #fffffe, #f6f6f6);
 			.services-wrapper {
 				display: flex;
 				justify-content: flex-start;
-				margin-top: 40px;
+				margin-top: 120px;
+				margin-bottom: 120px;
 				flex-wrap: wrap;
 				position: relative;
 				.right-bottom-bg {
 					position: absolute;
-					left: -300px;
-					top: 200px;
-					z-index: -1;
+					left: -370px;
+					top: 240px;
+					z-index: 1;
 					width: 400px;
 					overflow: hidden;
 				}

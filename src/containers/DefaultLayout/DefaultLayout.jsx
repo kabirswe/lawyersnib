@@ -145,7 +145,7 @@
 
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import Footer from './components/footer/Footer';
+import Footer from './components/Footer/Footer';
 import Navbar from './components/navbar/Navbar';
 import './static/DefaultLayout.scss';
 
