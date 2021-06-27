@@ -143,19 +143,29 @@
 //   mapDispatchToProps
 // )(withRouter(DefaultLayout));
 
-import React, {useState} from 'react';
+import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import Footer from './components/footer/Footer';
+import Navbar from './components/navbar/Navbar';
+import './static/DefaultLayout.scss';
 
-export const DefaultLayout = () => {
-
+export const DefaultLayout = (props) => {
   return (
-	<div className="default-layout">
-	  	<Container>
-			<Row>
-				<Col>jhsdjsbdjlbsljfb jshflshflhs jshflshfl lshflshf</Col>
-			</Row>
-				{/* jhsdjsbdjlbsljfb jshflshflhs jshflshfl lshflshf */}
-		</Container>
-	</div>
+	<>
+		<div className="default-layout">
+			<Container>
+				<Row>
+					
+				<Col md={12}>
+					<Navbar />
+				</Col>
+				</Row>
+			</Container>
+			<div className="main-container">
+				{props.children}
+			</div>
+			<Footer />
+		</div>
+	</>
   );
 };

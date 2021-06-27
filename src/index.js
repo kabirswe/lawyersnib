@@ -21,8 +21,8 @@ ReactDOM.render(
     <PersistGate loading={null} persistor={persistor}>
       <BrowserRouter>
         <MainRoutes />
-      </BrowserRouter>,
-      </PersistGate>
+      </BrowserRouter>
+    </PersistGate>
   </Provider>,
   document.getElementById('root')
 );

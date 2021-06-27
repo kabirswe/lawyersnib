@@ -4,7 +4,11 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import { HomePage } from '../app/home/index'
+import { HomePage } from '../app/home/index';
+import { OurTeamPage } from '../app/ourteam/index';
+import { ContactPage } from '../app/contact/index';
+import { AboutPage } from '../app/about/index';
+import { ServicesPage } from '../app/services/index';
 import { LoginPage, LoginPhonePage } from '../app/login/index';
 import {
   ForgetPasswordPage,
@@ -29,6 +33,22 @@ const routes = [
   {
     path: "/login",
     component: LoginPage
+  },
+  {
+    path: "/our-team",
+    component: OurTeamPage
+  },
+  {
+    path: "/contact",
+    component: ContactPage
+  },
+  {
+    path: "/about",
+    component: AboutPage
+  },
+  {
+    path: "/services",
+    component: ServicesPage
   },
   {
     path: "/login-phone",
