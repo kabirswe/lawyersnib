@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import {useSelector} from 'react-redux';
 import ApiServices from "../../networks/ApiServices";
 import AxiosServices from "../../networks/AxiosService";
-import { AuthLayout } from '../../containers/AuthLayout';
+import { AuthLayout } from '../../containers/index';
 import './static/RegistrationPage.scss';
 const axios = require('axios');
 

@@ -1,0 +1,107 @@
+// @import '../../../scss/variables';
+// @import '../../../scss/mixins';
+
+.main-footer {
+	position: relative;
+	margin-top: 120px;
+	background: #2b2b2c;
+	background: -webkit-linear-gradient(to right, #111111, #2b2b2c);
+	background: linear-gradient(to right, #111111, #2b2b2c);
+	.middle-bottom-bg {
+		position: absolute;
+		left: 16%;
+		bottom: -125px;
+		width: 280px;
+		z-index: 0;
+		opacity: 0.04;
+	}
+	.right-bottom-bg {
+		position: absolute;
+		right: 0%;
+		bottom: -216px;
+		width: 280px;
+		z-index: 0;
+		opacity: 0.04;
+	}
+	.certificate-block {
+		position: absolute;
+		height: 180px;
+		top: -70px;
+    	width: calc(100% - 30px);
+		padding: 40px 30px;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		background: #6813cc;
+		background: -webkit-linear-gradient(to right, #035aea, #6813cc);
+		background: linear-gradient(to right, #035aea, #6813cc);
+		border-radius: 22px;
+		box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+		img {
+			height: 30px;
+		}
+	}
+	.content-wrapper {
+		position: relative;
+		margin-top: 180px;
+		.contact-block {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			.contact {
+				p {
+					color: #ededed;
+					font-size: 24px;
+					text-transform: capitalize;
+				}
+				img {
+					width: 45px;
+					opacity: .5;
+				}
+			}
+			.social-icons {
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+				margin-top: -45px;
+				p {
+					font-size: 10px;
+					color: #cececd;
+				}
+				a {
+					img {
+						height: 14px;
+						margin-left: 20px;
+					}
+					&:nth-child(4) {
+						img {
+							height: 20px;
+						}
+					}
+				}
+			}
+		}
+		.address-block {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 70px;
+			p {
+				color: #64686e;
+				font-size: 12px;
+			}
+		}
+	}
+	.copy-right-wrapper {
+		border-top: 1px solid #64686e;
+		display: flex;
+		justify-content: center;
+		margin-top: 20px;
+		p {
+			padding: 20px 0;
+			color: #64686e;
+			font-size: 10px;
+		}
+	}
+	
+	
+}
