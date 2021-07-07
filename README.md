@@ -1,7 +1,7 @@
-# lawyersnib
+## lawyersnib
 personal project for bd lawyers.
 
-# Install Instruction
+## Install Instruction
 ```sh
 npm install
 ```
