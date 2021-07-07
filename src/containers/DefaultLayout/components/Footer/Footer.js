@@ -28,7 +28,7 @@ const Footer = () => {
 		<Container>
 			<Row>
 				<Col md={12}>
-					<div className="certificate-block">
+					{/* <div className="certificate-block">
 						<img
 							src={Logo1}
 							alt="logo"
@@ -53,7 +53,7 @@ const Footer = () => {
 							src={Logo2}
 							alt="logo"
 						/>
-					</div>
+					</div> */}
 				</Col>
 			</Row>
 			<div className="content-wrapper">

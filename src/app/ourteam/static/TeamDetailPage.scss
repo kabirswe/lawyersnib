@@ -1,0 +1,101 @@
+.team-detail-page {
+	position: relative;
+	display: flex;
+    justify-content: center;
+	// background-color: #262626;
+	// background: #fff;
+	// background: -webkit-linear-gradient(to bottom, #ffffff, #f6f6f6);
+	// background: linear-gradient(to bottom, #ffffff, #f6f6f6);
+	// overflow: hidden;
+	.left-bg {
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 11;
+		width: 30vw;
+		overflow: hidden;
+		height: 620px;
+		background: #f8a320;
+		background: -webkit-linear-gradient(to right, #f8a320, #ffdf1d);
+		background: linear-gradient(to right, #f8a320, #ffdf1d);
+		img {
+			position: absolute;
+			height: 320px;
+			right: -40px;
+			top: 160px;
+			opacity: .4;
+		}
+		p {
+			font-size: 30px;
+			color: #fedf1e;
+			font-weight: 700;
+			top: 100px;
+			position: absolute;
+			right: 114px;
+			text-transform: uppercase;
+		}
+	}
+	.contant-area {
+		margin-top: 140px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		flex-direction: column;
+		.profile-block {
+			display: flex;
+			.image-block {
+				margin-left: 10vw;
+				position: relative;
+				.frame {
+					border: 6px solid #fcdb20;
+					border-left: 0;
+					height: 340px;
+					width: 305px;
+					display: flex;
+					position: absolute;
+					top: -28px;
+    				z-index: 10;
+				}
+				img {
+					width: 280px;
+					height: 340px;
+					object-fit: cover;
+					object-position: center;
+					position: relative;
+					z-index: 20;
+				}
+			}
+			.content-block {
+				margin-left: 80px;
+				h1 {
+					font-weight: 800;
+					margin-bottom: 10px;
+					color: #454545;
+				}
+				p {
+					color: #8655de;
+					font-size: 20px;
+					font-weight: 800;
+				}
+				.note {
+					font-size: 12px;
+					margin-top: 10px;
+					font-weight: 500;
+					color: #cececd;
+				}
+			}
+		}
+		.experience-block {
+			margin-top: 140px;
+			p {
+				font-size: 12px;
+				img {
+					width: 220px;
+    				height: 240px;
+				}
+			}
+		}
+		
+	}
+}

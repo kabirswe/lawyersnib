@@ -1,11 +1,10 @@
 import React from "react";
 import {
   BrowserRouter as Router,
-  Switch,
-  Route
+  Switch
 } from "react-router-dom";
 import { HomePage } from '../app/home/index';
-import { OurTeamPage } from '../app/ourteam/index';
+import { OurTeamPage, TeamDetailPage } from '../app/ourteam/index';
 import { ContactPage } from '../app/contact/index';
 import { AboutPage } from '../app/about/index';
 import { ServicesPage } from '../app/services/index';
@@ -30,6 +29,11 @@ const routes = [
     exact: true,
     component: HomePage
   },
+  // {
+  //   path: "/home",
+  //   exact: true,
+  //   component: HomePage
+  // },
   {
     path: "/login",
     component: LoginPage
@@ -37,6 +41,10 @@ const routes = [
   {
     path: "/our-team",
     component: OurTeamPage
+  },
+  {
+    path: "/team/:id",
+    component: TeamDetailPage
   },
   {
     path: "/contact",
@@ -86,20 +94,6 @@ const routes = [
     path: "/registration-phone-confirmation",
     component: RegistrationPhoneConfirmationPage
   }
-//   {
-//     path: "/tacos",
-//     component: Tacos,
-//     routes: [
-//       {
-//         path: "/tacos/bus",
-//         component: Bus
-//       },
-//       {
-//         path: "/tacos/cart",
-//         component: Cart
-//       }
-//     ]
-//   }
 ];
 
 export const MainRoutes = () => {
@@ -107,7 +101,6 @@ export const MainRoutes = () => {
     <Router>
         <Switch>
           {routes.map((route, i) => (
-            // <RouteWithSubRoutes key={i} {...route} />
             <ManageAccess
                 key={i}
                 path={route.path}
@@ -117,19 +110,5 @@ export const MainRoutes = () => {
           ))}
         </Switch>
     </Router>
-  );
-}
-
-const RouteWithSubRoutes = (route, index) => {
-  return (
-    <Route
-      key={index}
-      path={route.path}
-      exact={route.exact}
-      render={props => (
-        // pass the sub-routes down to keep nesting
-        <route.component {...props} routes={route.routes} />
-      )}
-    />
   );
 }
