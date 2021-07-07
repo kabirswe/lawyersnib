@@ -1,7 +1,7 @@
 # lawyersnib
 personal project for bd lawyers.
 
-# Install Instruction
+## Install Instruction
 ```sh
 npm install
 ```
@@ -9,7 +9,7 @@ npm install
 npm start
 ```
 
-# To build static HTML
+## To build static HTML
 ```sh
 npm run build
 ```
