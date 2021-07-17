@@ -4,8 +4,11 @@ import { DefaultLayout } from '../../containers/index';
 import GrayBar from './static/image/gray-bar.svg';
 import User from './static/image/user.jpg';
 import LeftBgImage from './static/image/profile-bd.png';
+import MosiurRahman from './static/image/team/Mosiur-Rahman.jpg';
 import MohammadShaheenAkter from './static/image/team/Mohammad-Shaheen-Akter.jpg';
-import MohammadShaheenAkter2 from './static/image/team/Mohammad-Shaheen-Akter2.jpg';
+import HabiburRahman from './static/image/team/Habibur-Rahman.png';
+import MostafizurRahman from './static/image/team/Mostafizur-Rahman.png';
+import ShahNuri from './static/image/team/Shah-Nuri.jpg';
 import { Container, Row, Col } from 'react-bootstrap';
 import './static/TeamDetailPage.scss';
 
@@ -13,17 +16,38 @@ export const TeamDetailPage = () => {
 
 	const profileData = [
 		{
-			id: "Mohammad-Shaheen-Akter",
-			name: "Mohammad Shaheen Akter",
+			id: "Mosiur-Rahman",
+			name: "MD. MOSIUR RAHMAN",
 			designation: "Advocate Income Tax & Company Consultant",
+			image: MosiurRahman,
+			about: "Redundant alt attribute. Screen-readers already announce `img` tags as an image. You don’t need to use the words `image`, `photo,` or `picture` (or any specified custom words) in the alt prop  jsx-a11y/img-redundant-alt",
+		},
+		{
+			id: "Mohammad-Shaheen-Akter",
+			name: "MOHAMMAD SHAHEEN AKTER",
+			designation: "Advocate Income Tax & Company Consultant 2",
 			image: MohammadShaheenAkter,
 			about: "Redundant alt attribute. Screen-readers already announce `img` tags as an image. You don’t need to use the words `image`, `photo,` or `picture` (or any specified custom words) in the alt prop  jsx-a11y/img-redundant-alt",
 		},
 		{
-			id: "Mohammad-Shaheen-Akter2",
-			name: "Mohammad Shaheen Akter 2",
+			id: "Habibur-Rahman",
+			name: "MD. Habibur Rahman",
 			designation: "Advocate Income Tax & Company Consultant 2",
-			image: MohammadShaheenAkter2,
+			image: HabiburRahman,
+			about: "Redundant alt attribute. Screen-readers already announce `img` tags as an image. You don’t need to use the words `image`, `photo,` or `picture` (or any specified custom words) in the alt prop  jsx-a11y/img-redundant-alt",
+		},
+		{
+			id: "Mostafizur-Rahman",
+			name: "KAZI MD. MOSTAFIZUR RAHMAN",
+			designation: "Advocate Income Tax & Company Consultant 2",
+			image: MostafizurRahman,
+			about: "Redundant alt attribute. Screen-readers already announce `img` tags as an image. You don’t need to use the words `image`, `photo,` or `picture` (or any specified custom words) in the alt prop  jsx-a11y/img-redundant-alt",
+		},
+		{
+			id: "Shah-Nuri",
+			name: "MD. SHAH NURI",
+			designation: "Advocate Income Tax & Company Consultant 2",
+			image: ShahNuri,
 			about: "Redundant alt attribute. Screen-readers already announce `img` tags as an image. You don’t need to use the words `image`, `photo,` or `picture` (or any specified custom words) in the alt prop  jsx-a11y/img-redundant-alt",
 		}
 	];

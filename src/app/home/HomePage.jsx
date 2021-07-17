@@ -24,8 +24,11 @@ import AuctionImage from './static/image/auction.svg';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import User1 from './static/image/user1.jpg';
-import User2 from './static/image/user2.jpg';
+import MosiurRahman from '../ourteam/static/image/team/Mosiur-Rahman.jpg';
+import MohammadShaheenAkter from '../ourteam/static/image/team/Mohammad-Shaheen-Akter.jpg';
+import HabiburRahman from '../ourteam/static/image/team/Habibur-Rahman.png';
+import MostafizurRahman from '../ourteam/static/image/team/Mostafizur-Rahman.png';
+import ShahNuri from '../ourteam/static/image/team/Shah-Nuri.jpg';
 
 
 import { Container, Row, Col } from 'react-bootstrap';
@@ -87,11 +90,11 @@ export const HomePage = () => {
 					<Row>
 						<Col md={12}>
 							<div className="contant-area">
-								<h2><span>Best</span> Business</h2>
-								<h1>We're Equally Excited<br />About Corporate</h1>
+								<h2><span>Best</span> Consultancy</h2>
+								<h1>Complete Legal &<br />Business Consultancy</h1>
 								<hr />
-								<p>Our mission is to provide best service Our mission is to provide best service Our mission is to provide best service Our mission is to provide best service Our mission is to provide best service</p>
-								<Link to="">Learn More</Link>
+								<p>Lawyers Nib is a full-service Complete Legal and Business Consultancy Law Firm with a specialization in Civil, Criminal, Corporate, Company, Income Tax, VAT, Customs, Maritime, Banking & Finance, Property and Investment related legal practices.</p>
+								<Link to="/about">Learn More</Link>
 							</div>
 						</Col>
 					</Row>
@@ -117,7 +120,7 @@ export const HomePage = () => {
 									</div>
 									<div className="contant-block">
 										<h2><span>Abo</span>ut Us</h2>
-										<h1>Creative Design &<br />Development</h1>
+										<h1>At a Glance About Lawyers Nib</h1>
 										<hr />
 										<p>Our mission is to provide best service Our mission is to provide best service Our mission is to provide best service Our mission is to provide best service Our mission is to provide best service</p>
 										<Link to="">Read More</Link>
@@ -139,7 +142,7 @@ export const HomePage = () => {
 									/>
 									<div className="service-box">
 										<h2><span>OUR</span> SERVICES</h2>
-										<h1>Demand First-Rate Best &<br />Services</h1>
+										<h1>Demand First-Rate Best Services</h1>
 										<hr />
 										<p className="description">Our mission is to provide best service Our mission is to provide best service Our mission is to provide best service Our mission is to provide best service Our mission is to provide best service</p>
 									</div>
@@ -218,72 +221,60 @@ export const HomePage = () => {
 									</div>
 									<Slider {...settings}>
 										<div className="team-block">
-											<Link to="/team/name">
+											<Link to="/team/Mohammad-Shaheen-Akter">
 												<div className="image">
-													<img src={User2} alt="" />
+													<img src={MohammadShaheenAkter} alt="" />
 												</div>
 												<div className="content">
-													<h2>Mohammad Shaheen Akter</h2>
+													<h2>MOHAMMAD SHAHEEN AKTER</h2>
 													<p>Advocate</p>
 													<p>Income Tax & Company Consultant</p>
 												</div>
 											</Link>
 										</div>
 										<div className="team-block">
-											<Link to="/team/name">
+											<Link to="/team/Mosiur-Rahman">
 												<div className="image">
-													<img src={User1} alt="" />
+													<img src={MosiurRahman} alt="" />
 												</div>
 												<div className="content">
-													<h2>Mohammad Shaheen Akter</h2>
+													<h2>MD. MOSIUR RAHMAN</h2>
 													<p>Advocate</p>
 													<p>Income Tax & Company Consultant</p>
 												</div>
 											</Link>
 										</div>
 										<div className="team-block">
-											<Link to="/team/name">
+											<Link to="/team/Habibur-Rahman">
 												<div className="image">
-													<img src={User2} alt="" />
+													<img src={HabiburRahman} alt="" />
 												</div>
 												<div className="content">
-													<h2>Mohammad Shaheen Akter</h2>
+													<h2>MD. Habibur Rahman</h2>
 													<p>Advocate</p>
 													<p>Income Tax & Company Consultant</p>
 												</div>
 											</Link>
 										</div>
 										<div className="team-block">
-											<Link to="/team/name">
+											<Link to="/team/Mostafizur-Rahman">
 												<div className="image">
-													<img src={User1} alt="" />
+													<img src={MostafizurRahman} alt="" />
 												</div>
 												<div className="content">
-													<h2>Mohammad Shaheen Akter</h2>
+													<h2>KAZI MD. MOSTAFIZUR RAHMAN</h2>
 													<p>Advocate</p>
 													<p>Income Tax & Company Consultant</p>
 												</div>
 											</Link>
 										</div>
 										<div className="team-block">
-											<Link to="/team/name">
+											<Link to="/team/Shah-Nuri">
 												<div className="image">
-													<img src={User2} alt="" />
+													<img src={ShahNuri} alt="" />
 												</div>
 												<div className="content">
-													<h2>Mohammad Shaheen Akter</h2>
-													<p>Advocate</p>
-													<p>Income Tax & Company Consultant</p>
-												</div>
-											</Link>
-										</div>
-										<div className="team-block">
-											<Link to="/team/name">
-												<div className="image">
-													<img src={User1} alt="" />
-												</div>
-												<div className="content">
-													<h2>Mohammad Shaheen Akter</h2>
+													<h2>MD. SHAH NURI</h2>
 													<p>Advocate</p>
 													<p>Income Tax & Company Consultant</p>
 												</div>
@@ -305,7 +296,7 @@ export const HomePage = () => {
 								<div className="image-block">
 									<div className="heading-block">
 										<h2><span>Our</span> Procces</h2>
-										<h1>Creative Design &<br />Development</h1>
+										<h1>How We Provide Our Services</h1>
 										<hr />
 									</div>
 									<div className="images">

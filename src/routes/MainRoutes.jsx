@@ -1,7 +1,8 @@
 import React from "react";
 import {
   BrowserRouter as Router,
-  Switch
+  Switch,
+  HashRouter
 } from "react-router-dom";
 import { HomePage } from '../app/home/index';
 import { OurTeamPage, TeamDetailPage } from '../app/ourteam/index';

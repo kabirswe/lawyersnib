@@ -147,20 +147,16 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Footer from './components/Footer/Footer';
 import Navbar from './components/navbar/Navbar';
+import useSticky from './components/navbar/useSticky.js'
 import './static/DefaultLayout.scss';
 
 export const DefaultLayout = (props) => {
+	// const { isSticky, element } = useSticky();
   return (
 	<>
 		<div className="default-layout">
-			<Container>
-				<Row>
-					
-				<Col md={12}>
-					<Navbar />
-				</Col>
-				</Row>
-			</Container>
+			{/* <div ref={element}></div> */}
+			<Navbar />
 			<div className="main-container">
 				{props.children}
 			</div>
