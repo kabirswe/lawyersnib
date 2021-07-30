@@ -29,6 +29,8 @@ import MohammadShaheenAkter from '../ourteam/static/image/team/Mohammad-Shaheen-
 import HabiburRahman from '../ourteam/static/image/team/Habibur-Rahman.png';
 import MostafizurRahman from '../ourteam/static/image/team/Mostafizur-Rahman.png';
 import ShahNuri from '../ourteam/static/image/team/Shah-Nuri.jpg';
+import ApurbaDas from '../ourteam/static/image/team/Apurba-Das.jpg';
+import Partho from '../ourteam/static/image/team/Partho.jpg';
 
 
 import { Container, Row, Col } from 'react-bootstrap';
@@ -275,6 +277,30 @@ export const HomePage = () => {
 												</div>
 												<div className="content">
 													<h2>MD. SHAH NURI</h2>
+													<p>Advocate</p>
+													<p>Income Tax & Company Consultant</p>
+												</div>
+											</Link>
+										</div>
+										<div className="team-block">
+											<Link to="/team/Apurba-Das">
+												<div className="image">
+													<img src={ApurbaDas} alt="" />
+												</div>
+												<div className="content">
+													<h2>Apurba Das</h2>
+													<p>Advocate</p>
+													<p>Income Tax & Company Consultant</p>
+												</div>
+											</Link>
+										</div>
+										<div className="team-block">
+											<Link to="/team/Partho">
+												<div className="image">
+													<img src={Partho} alt="" />
+												</div>
+												<div className="content">
+													<h2>Partho</h2>
 													<p>Advocate</p>
 													<p>Income Tax & Company Consultant</p>
 												</div>

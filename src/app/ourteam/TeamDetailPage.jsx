@@ -9,6 +9,8 @@ import MohammadShaheenAkter from './static/image/team/Mohammad-Shaheen-Akter.jpg
 import HabiburRahman from './static/image/team/Habibur-Rahman.png';
 import MostafizurRahman from './static/image/team/Mostafizur-Rahman.png';
 import ShahNuri from './static/image/team/Shah-Nuri.jpg';
+import ApurbaDas from './static/image/team/Apurba-Das.jpg';
+import Partho from './static/image/team/Partho.jpg';
 import { Container, Row, Col } from 'react-bootstrap';
 import './static/TeamDetailPage.scss';
 
@@ -18,37 +20,79 @@ export const TeamDetailPage = () => {
 		{
 			id: "Mosiur-Rahman",
 			name: "MD. MOSIUR RAHMAN",
-			designation: "Advocate Income Tax & Company Consultant",
 			image: MosiurRahman,
-			about: "Redundant alt attribute. Screen-readers already announce `img` tags as an image. You don’t need to use the words `image`, `photo,` or `picture` (or any specified custom words) in the alt prop  jsx-a11y/img-redundant-alt",
+			degree: "MA, MBA, LL.M (Maritime Law)",
+			Consultant: "(Tax, VAT, Company & Maritime Affairs)",
+			designation: "Advocate Income Tax & Company Consultant",
+			description: "<p><b>Founder & Consultant</b><br />Lawyers Nib<br /><b>Founder & Executive Director</b><br />Lawyers Nib Academy<br /><b>Managing Director & CEO</b><br />Aristocrat Construction Limited</p>",
+			lastEducation: "LL.M in Maritime Law From Bangabandhu Sheikh Mujibur Rahman Maritime University",
+			about: "<h5>PROFILE</h5><hr /><p>Ambitious Consultant and Managing Director with excellent managing and technical skills. Highly effective at promoting positive relationships and building capable teams. Natural team-builder and leader with proven abilities across all levels of organizational management. Business Analyst effective at developing and implementing operational processes and systems. Quickly grasps business priorities to identify optimal personnel and IT solutions. Motivated Business Analyst with technical expertise and business acumen necessary to translate business requirements and objectives into scalable, highly resilient and successful system solutions. Multi-tasking Consultant well-known for successfully taking projects from beginning stages to completion. Commended for consistently meeting new technical challenges and finding solutions to satisfy customer needs. Determined and experienced in building lucrative client relationships and implementing successful processes and procedures. Talented Consultant with excellent client oversight, issue resolution and presentation skills. Highly skilled at juggling multiple tasks and projects. Outstanding motivator possessing first-rate intercommunication skills to work across organizational levels. Talented at developing strategies, setting goals and training employees. Confident and decisive when communicating goals and vision to succeed.</p><br /><br /><h5>WORK HISTORY</h5><hr /><ul><li>Delivered outstanding service to clients to maintain and extend relationship for future business opportunities.</li><li>Developed service plans in consultation with clients, and performed follow-ups assessing quantity and quality of services.</li><li>Created detailed road maps of action items and project goals and generated reports to inform budgeting and planning.</li><li>Supported clients with business analysis, documentation and data modeling.</li><li>Updated stakeholders on key milestones for projects.</li><li>Boosted success of client's organization by improving performance, motivation, job satisfaction, hiring practices, training programs and management systems.</li><li>Authored detailed work plans to meet business priorities and deadlines.</li><li>Developed strategic component development plans to support future projects.</li><li>Researched latest market trends to provide current knowledge to clients.</li><li>Collected confidential financial information from clients to construct comprehensive financial plans.</li><li>Leveraged on-site observation and personal interviews to identify team and individual strengths.</li><li>Maintained customer relationships and responded promptly and accurately to both internal and external questions and requests.</li></ul>"
 		},
 		{
 			id: "Mohammad-Shaheen-Akter",
 			name: "MOHAMMAD SHAHEEN AKTER",
-			designation: "Advocate Income Tax & Company Consultant 2",
 			image: MohammadShaheenAkter,
-			about: "Redundant alt attribute. Screen-readers already announce `img` tags as an image. You don’t need to use the words `image`, `photo,` or `picture` (or any specified custom words) in the alt prop  jsx-a11y/img-redundant-alt",
+			degree: "MA, MBA, LL.M (Maritime Law)",
+			Consultant: "(Tax, VAT, Company & Maritime Affairs)",
+			designation: "Advocate Income Tax & Company Consultant",
+			description: "<p><b>Founder & Consultant</b><br />Lawyers Nib<br /><b>Founder & Executive Director</b><br />Lawyers Nib Academy<br /><b>Managing Director & CEO</b><br />Aristocrat Construction Limited</p>",
+			lastEducation: "LL.M in Maritime Law From Bangabandhu Sheikh Mujibur Rahman Maritime University",
+			about: "<h5>PROFILE</h5><hr />"
 		},
 		{
 			id: "Habibur-Rahman",
 			name: "MD. Habibur Rahman",
-			designation: "Advocate Income Tax & Company Consultant 2",
 			image: HabiburRahman,
-			about: "Redundant alt attribute. Screen-readers already announce `img` tags as an image. You don’t need to use the words `image`, `photo,` or `picture` (or any specified custom words) in the alt prop  jsx-a11y/img-redundant-alt",
+			degree: "MA, MBA, LL.M (Maritime Law)",
+			Consultant: "(Tax, VAT, Company & Maritime Affairs)",
+			designation: "Advocate Income Tax & Company Consultant",
+			description: "<p><b>Founder & Consultant</b><br />Lawyers Nib<br /><b>Founder & Executive Director</b><br />Lawyers Nib Academy<br /><b>Managing Director & CEO</b><br />Aristocrat Construction Limited</p>",
+			lastEducation: "LL.M in Maritime Law From Bangabandhu Sheikh Mujibur Rahman Maritime University",
+			about: "<h5>PROFILE</h5><hr />"
 		},
 		{
 			id: "Mostafizur-Rahman",
 			name: "KAZI MD. MOSTAFIZUR RAHMAN",
-			designation: "Advocate Income Tax & Company Consultant 2",
 			image: MostafizurRahman,
-			about: "Redundant alt attribute. Screen-readers already announce `img` tags as an image. You don’t need to use the words `image`, `photo,` or `picture` (or any specified custom words) in the alt prop  jsx-a11y/img-redundant-alt",
+			degree: "MA, MBA, LL.M (Maritime Law)",
+			Consultant: "(Tax, VAT, Company & Maritime Affairs)",
+			designation: "Advocate Income Tax & Company Consultant",
+			description: "<p><b>Founder & Consultant</b><br />Lawyers Nib<br /><b>Founder & Executive Director</b><br />Lawyers Nib Academy<br /><b>Managing Director & CEO</b><br />Aristocrat Construction Limited</p>",
+			lastEducation: "LL.M in Maritime Law From Bangabandhu Sheikh Mujibur Rahman Maritime University",
+			about: "<h5>PROFILE</h5><hr /><p>Ambitious Consultant &Managing Director with excellent managing and technical skills. Highly effective at promoting positive relationships and building capable teams. Natural team-builder and leader with proven abilities across all levels of organizational management. Business Analyst effective at developing and implementing operational processes and systems. Quickly grasps business priorities to identify optimal personnel and IT solutions. Motivated Business Analyst with technical expertise and business acumen necessary to translate business requirements and objectives into salable, highly resilient and successful system solutions.</p><br />"
 		},
 		{
 			id: "Shah-Nuri",
 			name: "MD. SHAH NURI",
-			designation: "Advocate Income Tax & Company Consultant 2",
 			image: ShahNuri,
-			about: "Redundant alt attribute. Screen-readers already announce `img` tags as an image. You don’t need to use the words `image`, `photo,` or `picture` (or any specified custom words) in the alt prop  jsx-a11y/img-redundant-alt",
+			degree: "MA, MBA, LL.M (Maritime Law)",
+			Consultant: "(Tax, VAT, Company & Maritime Affairs)",
+			designation: "Advocate Income Tax & Company Consultant",
+			description: "<p><b>Founder & Consultant</b><br />Lawyers Nib<br /><b>Founder & Executive Director</b><br />Lawyers Nib Academy<br /><b>Managing Director & CEO</b><br />Aristocrat Construction Limited</p>",
+			lastEducation: "LL.M in Maritime Law From Bangabandhu Sheikh Mujibur Rahman Maritime University",
+			about: "<h5>PROFILE</h5><hr /><p>Ambitious Consultant & Managing Director with excellent managing and technical skills. Highly effective at promoting positive relationships and building capable teams. Natural team-builder and leader with proven abilities across all levels of organizational management. Business Analyst effective at developing and implementing operational processes and systems. Quickly grasps business priorities to identify optimal personnel and IT solutions. Motivated Business Analyst with technical expertise and business acumen necessary to translate business requirements and objectives into scalable, highly resilient and successful system solutions.</p><br />"
+		},
+		{
+			id: "Apurba-Das",
+			name: "APURBA DAS",
+			image: ApurbaDas,
+			degree: "MA, MBA, LL.M (Maritime Law)",
+			Consultant: "(Tax, VAT, Company & Maritime Affairs)",
+			designation: "Advocate Income Tax & Company Consultant",
+			description: "<p><b>Founder & Consultant</b><br />Lawyers Nib<br /><b>Founder & Executive Director</b><br />Lawyers Nib Academy<br /><b>Managing Director & CEO</b><br />Aristocrat Construction Limited</p>",
+			lastEducation: "LL.M in Maritime Law From Bangabandhu Sheikh Mujibur Rahman Maritime University",
+			about: "<h5>PROFILE</h5><hr /><p>Ambitious Coordinator with excellent managing and technical skills. Highly effective at promoting positive relationships and building capable teams. Natural team-builder and leader with proven abilities across all levels of organizational management. Business Analyst effective at developing and implementing operational processes and systems. Motivated Program Analyst with technical expertise and business acumen necessary to translate business requirements and objectives into salable, highly resilient and successful system solutions.</p>"
+		},
+		{
+			id: "Partho",
+			name: "Partho",
+			image: Partho,
+			degree: "MA, MBA, LL.M (Maritime Law)",
+			Consultant: "(Tax, VAT, Company & Maritime Affairs)",
+			designation: "Advocate Income Tax & Company Consultant",
+			description: "<p><b>Founder & Consultant</b><br />Lawyers Nib<br /><b>Founder & Executive Director</b><br />Lawyers Nib Academy<br /><b>Managing Director & CEO</b><br />Aristocrat Construction Limited</p>",
+			lastEducation: "LL.M in Maritime Law From Bangabandhu Sheikh Mujibur Rahman Maritime University",
+			about: "<h5>PROFILE</h5><hr />"
 		}
 	];
 
@@ -82,36 +126,18 @@ export const TeamDetailPage = () => {
 											/>
 										</div>
 										<div className="content-block">
-											<h1>{item.name}</h1>
-											<p>{item.designation}</p>
-											<p className="note">{item.about}</p>
+											<h1 className="name">
+												<span>{item.name}</span>
+												<span>{item.degree}</span>
+											</h1>
+											<p className="title-2">Consultant</p>
+											<p>{item.Consultant}</p>
+											<div dangerouslySetInnerHTML={{__html: item.description}} />
+											<p className="title-2">Last Education</p>
+											<p>{item.lastEducation}</p>
 										</div>
 									</div>
-									<div className="experience-block">
-										<p>One of the most difficult parts in writing a resume is composing the descriptions of your jobs, volunteer work, projects, and other relevant experiences. Each description of your work history and volunteer experience should be clear and concise, yet descriptive. After reading your description, a prospective employer should know exactly what your responsibilities were, what skills you have developed, where your strengths lie, and what you have achieved.
-
-										Here are some tips to help you write a concise and informative description:
-
-										Begin each item by stating the name of the place, location, dates, and job title (e.g. manager, volunteer) List experiences in reverse chronological order (most current experience first).
-										Describe your responsibilities in concise statements led by strong verbs. Focus on those skills and strengths that you possess and that you have identified as being important to your field. Try to incorporate industry specific key words. Show potential employers exactly how you will fit their position and their company. Click here for Sample Action Words (PDF).
-										Be sure to vary your action words. You do not want all your descriptions to sound the same. Use present tense for those activities which are ongoing and past tense for those with which you are no longer involved.
-										Avoid using "I," "and," "the," and the use of any pronouns and prepositions.
-										Whenever possible, quantify your accomplishments and responsibilities. That is, use numbers, amounts, dollar values, and percentages (e.g., "Increased monthly sales by forty percent," "Supervised and trained five new employees," "Handled daily receipts totaling $3000," "Designed 14 costumes for local production of").
-										Remember: You should spell out numbers under 10 and use numeric symbols for numbers 10 and over. However, there are always exceptions.
-										Avoid summarizing or describing what a company or organization you worked with did or does. Describe your responsibilities and accomplishments in relationship to the job/organization, not the job/organization itself.
-										Limit your description to the three or four most important points.
-										Example:
-
-										The Swim Club, Anywhere, PA
-										Assistant Manager/Head Lifeguard
-										Summers 20XX-20XX
-										Ensured safety of patrons and guests; resolved patron concerns
-										Supervised and trained six lifeguards on swim club policies and rules
-										Developed and maintained schedules for lifeguards, private swim lessons, and pool functions using Excel
-										Assisted manager in overall swim club operations
-										Check out some of Steinbright's resume samples to gather ideas on how to market your experiences and talents.
-										</p>
-									</div>
+									<div className="experience-block" dangerouslySetInnerHTML={{__html: item.about}} />
 								</div>
 							))}
 						</div>

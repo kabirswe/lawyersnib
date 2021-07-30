@@ -70,13 +70,26 @@
 				margin-left: 80px;
 				h1 {
 					font-weight: 800;
+					font-size: 25px;
 					margin-bottom: 10px;
 					color: #454545;
+					display: inline-flex;
+    				flex-direction: column;
+					span {
+						&:last-child {
+							font-size: 12px;
+							display: flex;
+							justify-content: flex-end;
+						}
+					}
 				}
 				p {
-					color: #8655de;
-					font-size: 20px;
-					font-weight: 800;
+					color: #454545;
+					font-size: 13px;
+					&.title-2, b {
+						font-weight: 800;
+						font-size: 16px;
+					}
 				}
 				.note {
 					font-size: 12px;
@@ -88,8 +101,16 @@
 		}
 		.experience-block {
 			margin-top: 140px;
-			p {
-				font-size: 12px;
+			h5 {
+				font-weight: 700;
+				margin-bottom: 0;
+			}
+			hr {
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+			p, ul li {
+				font-size: 13px;
 				img {
 					width: 220px;
     				height: 240px;
