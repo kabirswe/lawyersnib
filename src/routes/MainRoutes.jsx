@@ -37,46 +37,57 @@ const routes = [
   // },
   {
     path: "/login",
+    exact: true,
     component: LoginPage
   },
   {
     path: "/our-team",
+    exact: true,
     component: OurTeamPage
   },
   {
     path: "/team/:id",
+    exact: true,
     component: TeamDetailPage
   },
   {
     path: "/contact",
+    exact: true,
     component: ContactPage
   },
   {
     path: "/about",
+    exact: true,
     component: AboutPage
   },
   {
     path: "/services",
+    exact: true,
     component: ServicesPage
   },
   {
     path: "/login-phone",
+    exact: true,
     component: LoginPhonePage
   },
   {
     path: "/forget-password",
+    exact: true,
     component: ForgetPasswordPage
   },
   {
     path: "/forget-password-phone",
+    exact: true,
     component: ForgetPasswordPhonePage
   },
   {
     path: "/forget-password-confirm",
+    exact: true,
     component: ForgetPasswordConfirmPage
   },
   {
     path: "/password-reset",
+    exact: true,
     component: PasswordResetPage
   },
   {
