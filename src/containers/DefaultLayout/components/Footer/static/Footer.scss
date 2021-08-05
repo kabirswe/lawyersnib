@@ -92,6 +92,9 @@
 			p {
 				color: #64686e;
 				font-size: 12px;
+				&:first-child {
+					font-family: "Noto Sans", sans-serif;
+				}
 			}
 		}
 	}

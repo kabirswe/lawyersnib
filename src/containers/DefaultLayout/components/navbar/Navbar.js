@@ -46,7 +46,7 @@ const Navbar = () => {
 						</div>
 						<div className="call-block">
 							<Headphones height="25" width="25" />
-							<p>Call <br /><span>+88 01678054688</span></p>
+							<p>Call <br /><span>+880 1678 054 688</span></p>
 						</div>
 					</div>
 				</Col>

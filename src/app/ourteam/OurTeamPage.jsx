@@ -1,18 +1,10 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import { DefaultLayout } from '../../containers/index';
-import LeftBottom from './static/image/bg-left-bottom.svg';
 import GrayBar from './static/image/gray-bar.svg';
-import User from './static/image/user.jpg';
-import MosiurRahman from './static/image/team/Mosiur-Rahman.jpg';
-import MohammadShaheenAkter from './static/image/team/Mohammad-Shaheen-Akter.jpg';
-import HabiburRahman from './static/image/team/Habibur-Rahman.png';
-import MostafizurRahman from './static/image/team/Mostafizur-Rahman.png';
-import ShahNuri from './static/image/team/Shah-Nuri.jpg';
-import ApurbaDas from './static/image/team/Apurba-Das.jpg';
-import Partho from './static/image/team/Partho.jpg';
 import { Container, Row, Col } from 'react-bootstrap';
 import './static/OurTeamPage.scss';
+import {ProfileData} from './team';
 
 export const OurTeamPage = () => {
 	return (
@@ -31,90 +23,20 @@ export const OurTeamPage = () => {
 							<h1>Committed To Team Excellence</h1>
 							<hr />
 							<div className="team-container">
-								<div className="team-block">
-									<Link to="/team/Mohammad-Shaheen-Akter">
+							{ProfileData.map((item, index) => (
+								<div key={index} className="team-block">
+									<Link to={`/team/${item.id}`}>
 										<div className="image">
-											<img src={MohammadShaheenAkter} alt="" />
+											<img src={item.image} alt="" />
 										</div>
 										<div className="content">
-											<h2>MOHAMMAD SHAHEEN AKTER</h2>
-											<p>Advocate</p>
-											<p>Income Tax & Company Consultant</p>
+											<h2>{item.name}</h2>
+											<p>{item.listDesignation}</p>
+											<p>{item.Advocate ? item.Advocate:item.Consultant}</p>
 										</div>
 									</Link>
 								</div>
-								<div className="team-block">
-									<Link to="/team/Mosiur-Rahman">
-										<div className="image">
-											<img src={MosiurRahman} alt="" />
-										</div>
-										<div className="content">
-											<h2>MD. MOSIUR RAHMAN</h2>
-											<p>Advocate</p>
-											<p>Income Tax & Company Consultant</p>
-										</div>
-									</Link>
-								</div>
-								<div className="team-block">
-									<Link to="/team/Habibur-Rahman">
-										<div className="image">
-											<img src={HabiburRahman} alt="" />
-										</div>
-										<div className="content">
-											<h2>MD. Habibur Rahman</h2>
-											<p>Advocate</p>
-											<p>Income Tax & Company Consultant</p>
-										</div>
-									</Link>
-								</div>
-								<div className="team-block">
-									<Link to="/team/Mostafizur-Rahman">
-										<div className="image">
-											<img src={MostafizurRahman} alt="" />
-										</div>
-										<div className="content">
-											<h2>KAZI MD. MOSTAFIZUR RAHMAN</h2>
-											<p>Advocate</p>
-											<p>Income Tax & Company Consultant</p>
-										</div>
-									</Link>
-								</div>
-								<div className="team-block">
-									<Link to="/team/Shah-Nuri">
-										<div className="image">
-											<img src={ShahNuri} alt="" />
-										</div>
-										<div className="content">
-											<h2>MD. SHAH NURI</h2>
-											<p>Advocate</p>
-											<p>Income Tax & Company Consultant</p>
-										</div>
-									</Link>
-								</div>
-								<div className="team-block">
-									<Link to="/team/Apurba-Das">
-										<div className="image">
-											<img src={ApurbaDas} alt="" />
-										</div>
-										<div className="content">
-											<h2>Apurba Das</h2>
-											<p>Advocate</p>
-											<p>Income Tax & Company Consultant</p>
-										</div>
-									</Link>
-								</div>
-								<div className="team-block">
-									<Link to="/team/Partho">
-										<div className="image">
-											<img src={Partho} alt="" />
-										</div>
-										<div className="content">
-											<h2>Partho</h2>
-											<p>Advocate</p>
-											<p>Income Tax & Company Consultant</p>
-										</div>
-									</Link>
-								</div>
+								))}
 							</div>
 						</div>
 					</Col>

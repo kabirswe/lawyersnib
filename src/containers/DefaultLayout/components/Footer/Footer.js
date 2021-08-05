@@ -73,9 +73,9 @@ const Footer = () => {
 					</div>
 				</div>
 				<div className="address-block">
-					<p>+88 01129029019</p>
+					<p>+880 1678 054 688</p>
 					<p>info@lawyersnib.com</p>
-					<p>House: Road-11, Bir Uttom Khademul Bashar Sharak, Banani, Dhaka-1213, Bangladesh.</p>
+					<p>Room No-8001, Dhaka Bar Association (Anx-II), 6-7, Court House Street, Kotwali, Dhaka-1100, Bangladesh.</p>
 				</div>
 			</div>
 			<div className="copy-right-wrapper">

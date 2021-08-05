@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from "react-router-dom";
 import { DefaultLayout } from '../../containers/index';
 // import LeftBottom from './static/image/bg-left-bottom.svg';
 // import GrayBar from './static/image/gray-bar.svg';
@@ -48,7 +47,10 @@ export class ContactPage extends React.Component {
 										<h2><span></span>Reach Us</h2>
 										<div className="block">
 											<img src={MapImage} alt="" />
-											<p>House: Road-11, <br />Bir Uttom Khademul Bashar Sharak, Banani, <br />Dhaka-1213, Bangladesh.</p>
+											<p>Room No-8001,<br /> 
+											Dhaka Bar Association (Anx-II),<br /> 
+											6-7, Court House Street, <br />
+											Kotwali, Dhaka-1100.</p>
 										</div>
 										<div className="block">
 											<img src={MailImage} alt="" />
@@ -56,7 +58,7 @@ export class ContactPage extends React.Component {
 										</div>
 										<div className="block">
 											<img src={SmartphoneImage} alt="" />
-											<p>+88 01129029019</p>
+											<p>+880 1678 054 688</p>
 										</div>
 									</div>
 								</div>

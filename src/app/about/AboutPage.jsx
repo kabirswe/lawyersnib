@@ -1,8 +1,5 @@
 import React from 'react';
-import { Link } from "react-router-dom";
 import { DefaultLayout } from '../../containers/index';
-import Image1 from './static/image/img1.jpg';
-import LeftBottom from './static/image/bg-left-bottom.svg';
 import { Container, Row, Col } from 'react-bootstrap';
 import './static/AboutPage.scss';
 

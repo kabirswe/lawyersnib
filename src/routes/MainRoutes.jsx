@@ -92,18 +92,22 @@ const routes = [
   },
   {
     path: "/registration",
+    exact: true,
     component: RegistrationPage
   },
   {
     path: "/mentor-registration",
+    exact: true,
     component: MentorRegistrationPage
   },
   {
     path: "/registration-confirmation",
+    exact: true,
     component: RegistrationConfirmationPage
   },
   {
     path: "/registration-phone-confirmation",
+    exact: true,
     component: RegistrationPhoneConfirmationPage
   }
 ];

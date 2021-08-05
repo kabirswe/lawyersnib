@@ -24,13 +24,8 @@ import AuctionImage from './static/image/auction.svg';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import MosiurRahman from '../ourteam/static/image/team/Mosiur-Rahman.jpg';
-import MohammadShaheenAkter from '../ourteam/static/image/team/Mohammad-Shaheen-Akter.jpg';
-import HabiburRahman from '../ourteam/static/image/team/Habibur-Rahman.png';
-import MostafizurRahman from '../ourteam/static/image/team/Mostafizur-Rahman.png';
-import ShahNuri from '../ourteam/static/image/team/Shah-Nuri.jpg';
-import ApurbaDas from '../ourteam/static/image/team/Apurba-Das.jpg';
-import Partho from '../ourteam/static/image/team/Partho.jpg';
+
+import {ProfileData} from '../ourteam/team';
 
 
 import { Container, Row, Col } from 'react-bootstrap';
@@ -222,90 +217,22 @@ export const HomePage = () => {
 										<hr />
 									</div>
 									<Slider {...settings}>
-										<div className="team-block">
-											<Link to="/team/Mohammad-Shaheen-Akter">
-												<div className="image">
-													<img src={MohammadShaheenAkter} alt="" />
-												</div>
-												<div className="content">
-													<h2>MOHAMMAD SHAHEEN AKTER</h2>
-													<p>Advocate</p>
-													<p>Income Tax & Company Consultant</p>
-												</div>
-											</Link>
+										{ProfileData.map((item, index) => (
+										<div key={index} className="team-block">
+											<div className="team-block">
+												<Link to={`/team/${item.id}`}>
+													<div className="image">
+														<img src={item.image} alt="" />
+													</div>
+													<div className="content">
+														<h2>{item.name}</h2>
+														<p>{item.listDesignation}</p>
+														<p>{item.Advocate ? item.Advocate:item.Consultant}</p>
+													</div>
+												</Link>
+											</div>
 										</div>
-										<div className="team-block">
-											<Link to="/team/Mosiur-Rahman">
-												<div className="image">
-													<img src={MosiurRahman} alt="" />
-												</div>
-												<div className="content">
-													<h2>MD. MOSIUR RAHMAN</h2>
-													<p>Advocate</p>
-													<p>Income Tax & Company Consultant</p>
-												</div>
-											</Link>
-										</div>
-										<div className="team-block">
-											<Link to="/team/Habibur-Rahman">
-												<div className="image">
-													<img src={HabiburRahman} alt="" />
-												</div>
-												<div className="content">
-													<h2>MD. Habibur Rahman</h2>
-													<p>Advocate</p>
-													<p>Income Tax & Company Consultant</p>
-												</div>
-											</Link>
-										</div>
-										<div className="team-block">
-											<Link to="/team/Mostafizur-Rahman">
-												<div className="image">
-													<img src={MostafizurRahman} alt="" />
-												</div>
-												<div className="content">
-													<h2>KAZI MD. MOSTAFIZUR RAHMAN</h2>
-													<p>Advocate</p>
-													<p>Income Tax & Company Consultant</p>
-												</div>
-											</Link>
-										</div>
-										<div className="team-block">
-											<Link to="/team/Shah-Nuri">
-												<div className="image">
-													<img src={ShahNuri} alt="" />
-												</div>
-												<div className="content">
-													<h2>MD. SHAH NURI</h2>
-													<p>Advocate</p>
-													<p>Income Tax & Company Consultant</p>
-												</div>
-											</Link>
-										</div>
-										<div className="team-block">
-											<Link to="/team/Apurba-Das">
-												<div className="image">
-													<img src={ApurbaDas} alt="" />
-												</div>
-												<div className="content">
-													<h2>Apurba Das</h2>
-													<p>Advocate</p>
-													<p>Income Tax & Company Consultant</p>
-												</div>
-											</Link>
-										</div>
-										<div className="team-block">
-											<Link to="/team/Partho">
-												<div className="image">
-													<img src={Partho} alt="" />
-												</div>
-												<div className="content">
-													<h2>Partho</h2>
-													<p>Advocate</p>
-													<p>Income Tax & Company Consultant</p>
-												</div>
-											</Link>
-										</div>
+										))}
 									</Slider>
 									<Link to="/team/name" className="view-all">View All Team</Link>
 								</div>
