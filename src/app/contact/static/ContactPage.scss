@@ -13,7 +13,7 @@
 		top: 514px;
 	}
 	.form-area {
-		margin: 60px 0;
+		margin: 120px 0;
 		// display: flex;
 		width: 100%;
 		box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -100,7 +100,7 @@
 				}
 			}
 			.reach-us {
-				width: 240px;
+				width: 245px;
 				box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 				border-radius: 8px 100px 8px 8px;
 				padding: 20px;
@@ -130,6 +130,9 @@
 					margin-bottom: 30px;
 					&:last-child {
 						margin-bottom: 10px;
+						p {
+							font-family: "Noto Sans", sans-serif;
+						}
 					}
 					img {
 						height: 20px;

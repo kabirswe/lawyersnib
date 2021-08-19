@@ -2,10 +2,10 @@ import React from "react";
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  HashRouter
 } from "react-router-dom";
 import { HomePage } from '../app/home/index';
-import { OurTeamPage } from '../app/ourteam/index';
+import { OurTeamPage, TeamDetailPage } from '../app/ourteam/index';
 import { ContactPage } from '../app/contact/index';
 import { AboutPage } from '../app/about/index';
 import { ServicesPage } from '../app/services/index';
@@ -30,76 +30,86 @@ const routes = [
     exact: true,
     component: HomePage
   },
+  // {
+  //   path: "/home",
+  //   exact: true,
+  //   component: HomePage
+  // },
   {
     path: "/login",
+    exact: true,
     component: LoginPage
   },
   {
     path: "/our-team",
+    exact: true,
     component: OurTeamPage
   },
   {
+    path: "/team/:id",
+    exact: true,
+    component: TeamDetailPage
+  },
+  {
     path: "/contact",
+    exact: true,
     component: ContactPage
   },
   {
     path: "/about",
+    exact: true,
     component: AboutPage
   },
   {
     path: "/services",
+    exact: true,
     component: ServicesPage
   },
   {
     path: "/login-phone",
+    exact: true,
     component: LoginPhonePage
   },
   {
     path: "/forget-password",
+    exact: true,
     component: ForgetPasswordPage
   },
   {
     path: "/forget-password-phone",
+    exact: true,
     component: ForgetPasswordPhonePage
   },
   {
     path: "/forget-password-confirm",
+    exact: true,
     component: ForgetPasswordConfirmPage
   },
   {
     path: "/password-reset",
+    exact: true,
     component: PasswordResetPage
   },
   {
     path: "/registration",
+    exact: true,
     component: RegistrationPage
   },
   {
     path: "/mentor-registration",
+    exact: true,
     component: MentorRegistrationPage
   },
   {
     path: "/registration-confirmation",
+    exact: true,
     component: RegistrationConfirmationPage
   },
   {
     path: "/registration-phone-confirmation",
+    exact: true,
     component: RegistrationPhoneConfirmationPage
   }
-//   {
-//     path: "/tacos",
-//     component: Tacos,
-//     routes: [
-//       {
-//         path: "/tacos/bus",
-//         component: Bus
-//       },
-//       {
-//         path: "/tacos/cart",
-//         component: Cart
-//       }
-//     ]
-//   }
 ];
 
 export const MainRoutes = () => {
@@ -107,7 +117,6 @@ export const MainRoutes = () => {
     <Router>
         <Switch>
           {routes.map((route, i) => (
-            // <RouteWithSubRoutes key={i} {...route} />
             <ManageAccess
                 key={i}
                 path={route.path}
@@ -117,19 +126,5 @@ export const MainRoutes = () => {
           ))}
         </Switch>
     </Router>
-  );
-}
-
-const RouteWithSubRoutes = (route, index) => {
-  return (
-    <Route
-      key={index}
-      path={route.path}
-      exact={route.exact}
-      render={props => (
-        // pass the sub-routes down to keep nesting
-        <route.component {...props} routes={route.routes} />
-      )}
-    />
   );
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route } from 'react-router';
 
-export default function ManageAccess({path, component: Component, ...rest}) {
+export default function ManageAccess({path, exact, component: Component, ...rest}) {
     
-    return <Route path={path} {...rest} component={() => <Component />} />
+    return <Route path={path} exact {...rest} component={() => <Component />} />
 }
